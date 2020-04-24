@@ -14,7 +14,6 @@ from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
 # Define a flask app
 app = Flask(__name__)
-server = app.server
 unique_labels=['ALBATROSS', 'ALEXANDRINE PARAKEET', 'AMERICAN AVOCET',
        'AMERICAN BITTERN', 'AMERICAN COOT', 'AMERICAN GOLDFINCH',
        'AMERICAN KESTREL', 'AMERICAN PIPIT', 'AMERICAN REDSTART',
@@ -144,7 +143,4 @@ def upload():
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
-
-
-
+    app.run(debug=True)
