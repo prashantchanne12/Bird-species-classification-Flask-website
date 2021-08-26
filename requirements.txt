@@ -24,7 +24,7 @@ requests==2.23.0
 six==1.14.0
 soupsieve==1.9.5
 tb-nightly==1.14.0a20190301
-tensorflow==2.4.0 
+tensorflow==2.5.1 
 termcolor==1.1.0
 tf-estimator-nightly==1.14.0.dev2019030115
 urllib3==1.26.5
